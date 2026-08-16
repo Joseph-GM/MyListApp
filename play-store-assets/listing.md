@@ -41,7 +41,10 @@ MyListApp은 할 일(To-Do), 쇼핑 목록(To-Buy), 가고 싶은 곳(To-Go) 세
 
 **웹사이트**: (선택 사항 — 없으면 비워두면 됩니다)
 
-**개인정보처리방침 URL**: ⚠️ 아직 공개 URL이 없음 — 아래 "개인정보처리방침 호스팅" 참고
+**개인정보처리방침 URL**:
+```
+https://joseph-gm.github.io/MyListApp/privacy-policy.html
+```
 
 ---
 
@@ -55,14 +58,12 @@ MyListApp은 할 일(To-Do), 쇼핑 목록(To-Buy), 가고 싶은 곳(To-Go) 세
 
 ---
 
-## 개인정보처리방침 호스팅 — 제가 못 끝낸 부분
+## 개인정보처리방침 호스팅 ✅ 완료
 
-`docs/privacy-policy.html`은 만들어서 저장소에 커밋해뒀지만, **GitHub Pages로 공개할 수가 없었습니다** — 이 저장소가 private인데, private 저장소의 Pages는 GitHub Pro/Team 유료 플랜부터 지원됩니다 (무료 플랜 불가). 셋 중 하나를 골라주세요:
-
-1. **저장소를 public으로 전환** → GitHub Pages 무료로 활성화 가능 (제가 이어서 설정 가능)
-2. **GitHub Pro로 업그레이드** → private 유지하면서 Pages 사용 가능
-3. **다른 곳에 호스팅** (Netlify, Vercel 등 이미 계정 있으면) → `docs/privacy-policy.html` 파일 그대로 배포
-4. **임시방편**: Claude Artifact로 퍼블리시는 해뒀습니다 → 대화 중 링크를 "공유"로 전환하면 바로 쓸 수 있는 공개 URL이 나옵니다 (다만 장기적으로는 위 1~3번 중 하나가 낫습니다)
+저장소를 public으로 전환하고 GitHub Pages를 활성화해서 위 URL로 바로 접속됩니다
+(`docs/privacy-policy.html` → `main` 브랜치 `/docs` 폴더에서 서빙).
+저장소가 public이 됐으니, 민감한 정보(키/비밀번호 등)는 커밋하지 않도록 계속 주의해주세요
+(현재 `android/keystore.properties`, `*.jks`는 `.gitignore`로 제외되어 있어 안전합니다).
 
 ---
 
@@ -111,7 +112,7 @@ MyListApp은 할 일(To-Do), 쇼핑 목록(To-Buy), 가고 싶은 곳(To-Go) 세
 1. [ ] Google Play Console 개발자 계정 생성 ($25, 최초 1회, 본인 인증 필요 — 며칠 걸릴 수 있음)
 2. [ ] 새 앱 만들기 → 위 스토어 등록정보 붙여넣기
 3. [ ] 그래픽 자산 업로드 (`play-store-assets/` 폴더의 아이콘/피처 그래픽/스크린샷 3장)
-4. [ ] 개인정보처리방침 URL 결정 및 연결 (위 "개인정보처리방침 호스팅" 1~4번 중 선택)
+4. [ ] 개인정보처리방침 URL 연결: `https://joseph-gm.github.io/MyListApp/privacy-policy.html`
 5. [ ] 데이터 보안 / 콘텐츠 등급 / 대상 연령층 / 앱 액세스 설문 제출 (위 답변 참고)
 6. [ ] `android/app/build/outputs/bundle/release/app-release.aab` 업로드 (내부 테스트 트랙 먼저 권장)
 7. [ ] 업로드 키 백업 — `android/keystore/mylistapp-upload-key.jks` + `android/keystore.properties`를
