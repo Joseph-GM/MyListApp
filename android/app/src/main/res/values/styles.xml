@@ -4,6 +4,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <!-- 콜드 스타트 시 RN 루트뷰가 뜨기 전까지 잠깐 보이는 런치 화면 -->
+        <item name="android:windowBackground">@drawable/launch_screen</item>
     </style>
 
 </resources>
