@@ -90,9 +90,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.mylistapp"
+    namespace "com.josephkim.mylistapp"
     defaultConfig {
-        applicationId "com.mylistapp"
+        applicationId "com.josephkim.mylistapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

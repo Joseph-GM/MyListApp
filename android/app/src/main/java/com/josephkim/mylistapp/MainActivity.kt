@@ -1,4 +1,4 @@
-package com.mylistapp
+package com.josephkim.mylistapp
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
