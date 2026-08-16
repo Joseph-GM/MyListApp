@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱 콜드 스타트 시 첫 프레임이 그려지기 전까지 android:windowBackground로 잠깐 보이는 화면.
+     브랜드 컬러 배경 위에 앱 아이콘과 같은 모티프의 로고를 중앙에 띄운다. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splash_background"/>
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/splash_mark"
+            android:gravity="center"/>
+    </item>
+</layer-list>
