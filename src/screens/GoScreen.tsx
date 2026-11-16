@@ -4,6 +4,7 @@ import { usePages } from '../hooks/usePages';
 import ListPageRow from '../components/ListPageRow';
 import ListItemRow from '../components/ListItem';
 import AddItemModal from '../components/AddItemModal';
+import AddItemFooter from '../components/AddItemFooter';
 import { ListItem } from '../types';
 
 // To-Go 만 리스트(페이지) 안 항목에 지도 URL 필드가 붙는다는 점이 다름.
@@ -64,12 +65,9 @@ export default function GoScreen() {
               onToggle={id => toggleItem(selectedPage.id, id)}
             />
           )}
-          ListEmptyComponent={<Text style={styles.empty}>가고 싶은 곳이 없습니다</Text>}
+          ListEmptyComponent={<Text style={styles.emptyItems}>가고 싶은 곳이 없습니다</Text>}
+          ListFooterComponent={<AddItemFooter onPress={openAddItem} />}
         />
-
-        <TouchableOpacity style={styles.fab} onPress={openAddItem}>
-          <Text style={styles.fabText}>+</Text>
-        </TouchableOpacity>
 
         <AddItemModal
           visible={itemModalVisible}
@@ -123,6 +121,7 @@ const styles = StyleSheet.create({
   backText: { fontSize: 15, color: '#2f6fed', fontWeight: '600' },
   headerTitle: { flex: 1, fontSize: 16, fontWeight: '700', color: '#222' },
   empty: { textAlign: 'center', marginTop: 60, color: '#aaa' },
+  emptyItems: { textAlign: 'center', marginTop: 40, marginBottom: 8, color: '#aaa' },
   fab: {
     position: 'absolute',
     right: 20,
